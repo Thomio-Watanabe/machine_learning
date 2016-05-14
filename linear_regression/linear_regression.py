@@ -1,0 +1,32 @@
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+print '-- Loading dataset files... ' 
+x = np.loadtxt('ex2x.dat')
+y = np.loadtxt('ex2y.dat')
+
+m = y.size
+print '-- Number of elements: ' + str(m)
+
+a = np.array([0,0])
+x = np.array([ (np.ones(m)), (x) ])
+
+# Partial derivative constant (alpha)
+c = 0.07
+
+# Max number of iterations
+limit = 1500
+
+# Calculate the gradient descent
+# Python matrix multiplication is array.dot()
+for i in range(limit):
+    h = a.dot(x)
+    a = a - (c/m) * (h - y).dot(x.transpose()) 
+
+print '-- Linear regression coefficients: ' + str(a)
+
+# Plot results
+x = x.transpose()[:,1]
+plt.plot(x,y)
