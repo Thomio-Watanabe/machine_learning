@@ -28,5 +28,5 @@ for i in range(limit):
 print '-- Linear regression coefficients: ' + str(a)
 
 # Plot results
-x = x.transpose()[:,1]
-plt.plot(x,y)
+x0 = x.transpose()[:,1]
+plt.plot(x0, y, 'o', x0, a.dot(x)), plt.show()
