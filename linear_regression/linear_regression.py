@@ -1,11 +1,16 @@
 
+# Thomio Watanabe
+# Date: May 2016
+# Exercice from:
+# http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&doc=exercises/ex2/ex2.html
+
 import numpy as np
 import matplotlib.pyplot as plt
 
 
 print '-- Loading dataset files... ' 
-x = np.loadtxt('ex2x.dat')
-y = np.loadtxt('ex2y.dat')
+x = np.loadtxt('dataset/ex2x.dat')
+y = np.loadtxt('dataset/ex2y.dat')
 
 m = y.size
 print '-- Number of elements: ' + str(m)
