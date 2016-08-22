@@ -10,9 +10,9 @@ from numpy.linalg import inv
 import matplotlib.pyplot as plt
 
 
-print '-- Loading dat aset files... '
-x = np.loadtxt('dataset/ex3x.dat')
-y = np.loadtxt('dataset/ex3y.dat')
+print '-- Loading data set files... '
+x = np.loadtxt('../dataset/ex3x.dat')
+y = np.loadtxt('../dataset/ex3y.dat')
 
 
 print '-- Normalizing the input data'

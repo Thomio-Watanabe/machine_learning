@@ -14,8 +14,8 @@ import matplotlib.pyplot as plt
 iterations = 1500
 learning_rate = 0.07
 
-train_x = np.loadtxt('dataset/ex2x.dat')
-train_y = np.loadtxt('dataset/ex2y.dat')
+train_x = np.loadtxt('../dataset/ex2x.dat')
+train_y = np.loadtxt('../dataset/ex2y.dat')
 n_elements = train_y.size
 
 # Add column with 1's -> represent the a0 coefficient
